@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid;
+            width: 500px;
+            height: 800px auto;
+            margin: 500px auto;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: rgb(151, 126, 158);
+            
+            
+        }
+        #textarea{
+            width: 450px;
+            height: 100px;
+
+        }
+        #Register{
+            width: 450px;
+            height: 30px;
+            background-color: rgb(7, 90, 80);
+            margin: 0px;
+            padding: 0px;
+            border-radius: 10px;
+            color: white;
+            
+            
+            
+        }
+        .input.field{
+            border-radius: 5px;
+            background-color: #ffff;
+            width: 400px;
+            padding: 5px;
+        }
+        .container1{
+            background-color: rgb(193, 130, 159);
+            
+        
+    
+            
+        }
+       .container2{
+        background-color: rgb(198, 151, 172);
+       }
+       .group{
+        padding-bottom: 20px;
+       }
+       .course{
+        color: white;
+       }
+       #Register:hover{
+        background-color:blue;
+       }
+    
+
+       
+            
+        
+
+
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form >
+     <div class="course" > 
+
+    <h1>Course Registration</h1>
+    </div>  
+    
+    <fieldset class="container1">
+        <legend>Personal Information</legend>
+
+    <div class="group">
+        <label for="Name" >Full Name</label><br>
+        <input type="text" name="name" id="name" class="input field" required placeholder="Enter yourname"/><br>
+    
+    </div>
+
+    <div class="group">
+        <label for="email" >Email Adress</label><br>
+        <input type="email" name="email" id="email"  class="input field" required placeholder="Email adress"/><br>
+    </div>
+
+    <div class="group">
+    
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password"  class="input field" repuired placeholder="password"/><br>
+    </div>
+
+    <div class="group">
+    
+        <label for="password">Comfirm Password</label><br>
+        <input type="password" name="password" id="password" class="input field" required placeholder="Comfirm Password"/><br>
+    </div>
+    </fieldset>
+
+    <fieldset class="container2">
+        <legend>Demographics</legend>
+
+
+    <div class="group">
+        <label for="gender">Gender</label><br>
+       
+        
+        <input type="radio" name="gender" id="male"/>
+        
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="female"/>
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="other"/>
+        <label for="gender">Other</label><br>
+    </div>
+    
+    <div class="group">
+
+        <label for="Interest">Interest</label><br>
+        <input type="checkbox" id="Design"/>
+        <label for="gesign">Design</label>
+        <input type="checkbox" id="Coding"/>
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="marketing"/>
+        <label for="marketing">Markering</label><br>
+        </div>
+
+        <div class="group">
+
+        <label for="country"> Your Country</label><br>
+        <select>
+            <option value="select">Selectone</option>
+            <option>Myanmar</option>
+            <option>Janpan</option>
+        </select><br>
+        </div>
+
+        
+        
+        </fieldset>
+        <div class="group">
+
+        <label for="short bio">Short Bio</label><br>
+        <textarea id="textarea"></textarea><br>
+        </div>
+
+        <div class="group">
+
+        <input type="submit" id="Register" value="Register"/>
+        </div>
+
+
+       
+        
+        
+    
+    </form>
+    </div>
+    
+
+
+
+
+    
+</body>
+
+</html>
